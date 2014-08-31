@@ -3,3 +3,10 @@
 if exists("+colorcolumn")
   set colorcolumn=81          " display a marker after column 80
 endif
+
+if exists("+relativenumber")
+  if v:version >= 400
+    set nonumber
+  endif
+  set norelativenumber  " show relative line numbers
+endif
